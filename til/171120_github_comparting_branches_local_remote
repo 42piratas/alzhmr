@@ -1,0 +1,5 @@
+e.g.
+
+git log master ^origin/master --oneline
+
+git log test ^origin/dev --oneline

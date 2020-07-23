@@ -1,0 +1,9 @@
+# When having problems to read a website with Pandas read_html due to a bad certificate
+
+import urllib3,certifi
+https = urllib3.PoolManager( cert_reqs='CERT_REQUIRED', ca_certs=certifi.where(),)
+url = https.urlopen('GET','https://simple.wikipedia.org/wiki/List_of_U.S._states')
+usa_states = pd.read_html(url.data)
+print(usa_states)
+
+# From: https://stackoverflow.com/questions/33371842/error-when-verifying-ssl-certificate

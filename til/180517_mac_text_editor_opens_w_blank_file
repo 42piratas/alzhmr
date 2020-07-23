@@ -1,0 +1,8 @@
+If you don't want to disable syncing documents and data, run
+
+defaults write -g NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
+and quit and reopen TextEdit to apply the changes.
+
+To restore (thanks to comments run)
+
+defaults delete -g NSShowAppCentricOpenPanelInsteadOfUntitledFile

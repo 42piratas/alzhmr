@@ -1,0 +1,4 @@
+# -a forces to open with any app
+
+# e.g
+open -a TextEdit /usr/local/bin/virtualenv

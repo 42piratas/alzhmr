@@ -1,0 +1,7 @@
+.py
+
+#pragma: no cover
+$ nosetests --rednose
+$ nosetests --with-coverage [path/filename].py
+$ nosetests --pdb
+$ nosetests --pdb-failures

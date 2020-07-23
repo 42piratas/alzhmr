@@ -1,0 +1,15 @@
+.py
+
+from collections import namedtuple
+
+Color = namedtuple('Color', ['red', 'green', 'blue'])
+
+light_blue = Color(55, 155, 255) #implicit
+
+print(light_blue[0]) #55
+
+print(light_blue.red) #55
+print(light_blue.green) #155
+print(light_blue.blue) #255
+
+light_yellow = Color(red=255, green=255, blue=55) #explicit

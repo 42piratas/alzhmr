@@ -1,0 +1,4 @@
+.py
+
+# To get a list of the slowest 10 test durations
+py.test --durations=10

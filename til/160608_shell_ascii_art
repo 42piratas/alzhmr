@@ -1,0 +1,3 @@
+Launch Terminal application
+Execute this command: sudo pico /etc/motd, password is required
+Type in your message (=> ASCII art), save it with Control-X.

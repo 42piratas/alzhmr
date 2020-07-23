@@ -1,0 +1,3 @@
+>terminal
+
+py.test . --doctest-modules --cov-report=html --cov --html=summary.html

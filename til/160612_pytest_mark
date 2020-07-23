@@ -1,0 +1,25 @@
+.py
+
+import pytest
+
+@pytest.mark.parametrize('num', 'expected'),
+    [(-1,1), (0, 2), (2,4)])
+
+def test_add(num, expected):
+    assert add_two(num) == expected
+
+#############################
+# WHICH WOULD BE THE SAME AS:
+
+import unittest
+
+class AddTests(unittest.TestCase):
+
+    def testMinusOne(self):
+        self.assertEqual(add_two(-1), 1)
+
+    def testZero(self):
+        self.assertEqual(add_two(0), 2)
+
+    def testTwo(self):
+        self.assertEqual(add_two(2), 4)

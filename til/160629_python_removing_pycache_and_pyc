@@ -1,0 +1,6 @@
+terminal/script
+
+""" This will remove all *.pyc files and __pycache__
+directories recursively in the current directory """
+
+> find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf

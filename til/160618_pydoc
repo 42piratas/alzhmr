@@ -1,0 +1,5 @@
+.py
+
+pydoc module_name       #text output
+pydoc – w module_name   #html output
+pydoc –g                #open graphical interface

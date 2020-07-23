@@ -1,0 +1,8 @@
+# tokenizing - words tokenizers and sentence tokenizers
+# corpora - body of text. ex: medical journals, presidential speeches, English Language
+# lexicon - words and their meanings
+
+# lexicon = context
+# ex. investor-speak x regular-english-speak
+# investor-speak 'bull' = someone who is positive about the market
+# regular-english-speak 'bull' = animal

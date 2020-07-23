@@ -1,0 +1,6 @@
+"""When you cd into a directory containing a .env,
+autoenv automagically activates the environment."""
+
+# Install it on Mac OS X using brew:
+
+$ brew install autoenv

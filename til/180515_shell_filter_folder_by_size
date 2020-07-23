@@ -1,0 +1,16 @@
+There is no Folder size option in Finder's search (afaik), so I did some Unix command research and found the wonderful du (short for disk usage). By default, du lists the folder sizes as multiples of 512 bytes, but you can easily change that to 1024 bytes with the -k flag. So, if you wanted to see the size of all your Dropbox folders, you would run the following command in Terminal:
+
+$ du -k /path/to/Dropbox/*
+If you're already in the Dropbox directory:
+
+$ du -k *
+In my case, I wanted to filter the list to only include folders that are over 500MB. That can be easily done using the Unix pipeline feature (where you can feed the output of one command into another command), and AWK:
+
+du -k ~/Dropbox/* | awk '$1 > 500000'
+The du command outputs two values, the folder size, and the folder path. Awk captures those values inside the $1 and $2 variables, respectively.
+
+To sort the results by largest folder size, we can add another pipe and use the sort command:
+
+du -k ~/Dropbox/* | awk '$1 > 500000' | sort -nr
+
+source: https://www.moncefbelyamani.com/find-the-largest-folders-on-your-mac-in-one-keystroke-with-keyboard-maestro-or-quicksilver/

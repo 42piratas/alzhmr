@@ -1,0 +1,5 @@
+.py
+
+pylint              # display very long list with all options
+pylint filename.py  # check file for consistency with standards
+pylint module       # check module

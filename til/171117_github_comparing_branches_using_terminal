@@ -1,0 +1,11 @@
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative BRANCH-Y..BRANCH-X
+
+OR
+
+git log BRANCH-X..BRANCH-Y
+
+OR
+
+git log BRANCH-X..BRANCH-Y --oneline
+
+^best one^

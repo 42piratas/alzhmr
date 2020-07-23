@@ -1,0 +1,14 @@
+.py
+
+a_string = [1, 2, 3]
+
+
+def foo():
+    a_string = [2, 3, 4]
+    print a_string  # 1
+    print locals()
+
+
+foo()
+print(a_string)
+print globals()

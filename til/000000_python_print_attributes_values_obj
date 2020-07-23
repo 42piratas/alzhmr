@@ -1,0 +1,3 @@
+# One-liner to print all attributes and their values of a certain obj
+
+print({k:getattr(ojb,k) for k in obj.__dir__()})

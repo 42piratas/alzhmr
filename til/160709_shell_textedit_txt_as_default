@@ -1,0 +1,7 @@
+# Copy and paste the following command in OS X Terminal:
+
+defaults write com.apple.TextEdit RichText -int 0
+
+# Revert to the default setting with the following command:
+
+defaults delete com.apple.TextEdit RichText

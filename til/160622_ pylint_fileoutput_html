@@ -1,0 +1,3 @@
+command line
+
+pylint modules --files-output=y --output-format=html

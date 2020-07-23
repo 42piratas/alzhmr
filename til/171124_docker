@@ -1,0 +1,11 @@
+https://docker-curriculum.com/
+
+docker pull XXXXXX
+
+docker images
+
+docker run XXXXXX
+
+docker ps
+
+docker ps -a

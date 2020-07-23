@@ -1,0 +1,12 @@
+-- Set This To The Folder You Want Your Videos Moved To
+property moveToFolder : "/path/movies"
+-- Set This To The Name Extensions Of Files To Act Upon
+property videoFileExtensions : {"m4v", "mkv", "avi", "mp4", "mov", "wmv", "mpg"}
+
+on adding folder items to theFolder after receiving theNewItems
+    tell application "Finder"
+        set movieFilesRef to a reference to (files of entire contents of folder theFolder ¬
+            whose name extension is in videoFileExtensions)
+        move movieFilesRef to alias moveToFolder
+    end tell
+end adding folder items to

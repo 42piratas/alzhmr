@@ -1,0 +1,7 @@
+ipfs init 
+ipfs daemon
+ipfs add FILE.ext #returns HASH
+ipfs pin ls
+
+#to recover
+ipfs get HASH

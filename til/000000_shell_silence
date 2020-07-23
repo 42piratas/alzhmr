@@ -1,0 +1,27 @@
+#!/bin/bash
+
+killall -9 Telegram
+killall -9 WhatsApp
+killall -9 Skype
+killall -9 Viber
+killall -9 WeChat
+killall -9 LINE
+killall -9 ICQ
+killall -9 LimeChat
+killall -9 HipChat
+killall -9 Riot
+killall -9 Discord
+killall -9 "zoom.us"
+killall -9 "Rocket.Chat+"
+killall -9 "FreeChat for Facebook Messenger"
+killall -9 "Tor Messenger"
+killall -9 "Tor Browser"
+killall -9 TweetDeck
+killall -9 Spotify
+
+echo "You are good to go!"
+
+# Plus add the line
+# alias SILENCE="~/./.silence"
+# to .bash_profile
+# to call the script using only 'SILENCE' from the terminal

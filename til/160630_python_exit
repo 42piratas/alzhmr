@@ -1,0 +1,9 @@
+.py
+
+# Today I've learned a ton of shit :))))
+# The following is only one of it
+
+import sys
+
+# Exits the script
+sys.exit()

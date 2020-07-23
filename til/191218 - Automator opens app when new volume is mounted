@@ -1,0 +1,32 @@
+1 - Create a new Automator action of type Folder Action
+2 - Choose the Volumes folder of your System as input, I think you'll have to use Go to folder and type /Volumes
+3 - As first action choose Execute Applescript
+4 - Use the following script and define the first two variables to match your needs:
+
+
+on run {input, parameters}
+
+    -- define the volume name and the application to start
+    set triggeringVolumeName to "YOUR_VOLUME_NAME"
+    set applicationToStart to application "Microsoft Word"
+
+    -- walk through all newly mounted volumes
+    repeat with aMountedVolumeAlias in input
+
+        -- get the volume name from the given alias
+        tell application "System Events" to set mountedVolumeName to name of aMountedVolumeAlias
+
+        -- compare the volume name with the defined trigger name
+        if mountedVolumeName is triggeringVolumeName then
+
+            -- launch the target application
+            launch applicationToStart
+
+            -- all is done stop checking
+            exit repeat
+
+        end if
+
+    end repeat
+    return input
+end run

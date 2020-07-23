@@ -1,0 +1,48 @@
+.py
+
+# Runs once for this whole module
+def setup_module(module):
+    print('setup_module')
+
+# Runs once for this whole module
+def teardown_module(module):
+    print('teardown_module')
+
+class TestDB:
+    # Runs once for all the tests
+    @classmethod
+    def setup_class(cls):
+        print('\ tsetup_class')
+
+    # Runs once for all the tests
+    @classmethod
+    def teardown_class(cls):
+        print('\t teardown_class')
+
+    # Runs once for each test in this class
+    def setup_method(self, method):
+        print('\t\t setup_method')
+
+    # Runs once for each test in this class
+    def teardown_method(self, method):
+        print('\t\t teardown_method')
+
+    def test_one(self):
+        print('\t\t\t test_one')
+
+    def test_two(self):
+        print('\t\t\t test_two')
+
+
+############## OUTPUT ##############
+
+setup_module
+    setup_class
+        setup_method
+            test_one
+        teardown_method
+        setup_method
+            test_two
+        teardown_method
+    teardown_class
+teardown_module

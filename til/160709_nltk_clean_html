@@ -1,0 +1,13 @@
+import nltk
+
+# http://www.nltk.org/api/nltk.html#nltk.util.clean_html
+
+clean = nltk.clean_html(html)
+
+# clean will have entire string removing all the html noise
+
+tokens = [tok for tok in clean.split()]
+print tokens[:100]
+
+""" ['Welcome', 'to', 'Python.org', 'Skip', 'to', 'content', '&#9660;', 'Close', 'Python', 'PSF', 'Docs', 'PyPI', 'Jobs', 'Community', '&#9650;', 'The', 'Python', 'Network', '&equiv;', 'Menu', 'Arts', 'Business' ...]
+Cool, right? This definitely is much cleaner and easier to do """

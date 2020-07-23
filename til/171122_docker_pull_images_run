@@ -1,0 +1,10 @@
+(just to register my first day with Docker :-P )
+
+https://docker-curriculum.com/
+
+> docker pull XXXXX
+
+> docker images
+= list local images, including XXXXX
+
+> docker run XXXXX

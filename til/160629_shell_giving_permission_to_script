@@ -1,0 +1,13 @@
+terminal
+
+# Giving permission
+
+> chmod +x /path/to/yourscript.sh
+
+# Executing
+
+> /path/to/yourscript.sh
+
+# Executing locally
+
+> ./yourscript.sh
